@@ -5,12 +5,11 @@ from database_handler import ProductDB, get_db
 from sqlalchemy.orm import Session
 
 app = FastAPI(
-    title="Marketplace API",
+    title="Products API",
     description="API для управления продуктами ",
     version="1.0.0",
     docs_url="/api/docs",
 )
-
 
 # Получение всех продуктов с возможностью фильтрации
 @app.get("/api/products", response_model=List[Product])

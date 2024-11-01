@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY ./app .
 
 ENV PYTHONUNBUFFERED=1
 ENV DATABASE_URL=postgresql://debral:12481632@localhost:5432/postgres 

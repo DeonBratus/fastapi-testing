@@ -3,7 +3,6 @@ from fastapi import status
 from pydantic import BaseModel
 from typing import Optional
 
-# Pydantic-модель для продукта
 class Product(BaseModel):
     id: int
     product_title: Optional[str] = None
